@@ -15,23 +15,18 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title:              Squadra Labs Blog
+title:              Squadra Labs - Blog
 email:              info@squadralabs.com
 description:        >-  # this means to ignore newlines
   The Data Blog of Squadra Labs
 author:             Squadra Labs
-baseurl:            "" # the subpath of your site, e.g. /blog
+baseurl:            "/blog" # the subpath of your site, e.g. /blog
 url:                "" # the base hostname & protocol for your site, e.g. http://example.com
-# url:                "https://blog.squadralabs.com"
-url:                "https://squadralabs.github.io"
+
 
 
 ## Social Profiles
-github_username:    squadralabs
-instagram_username: squadra.labs
 linkedin_company:   squadra-labs
-# google_analytics:   UA-XXXXXXXXX-X 
-
 
 ## Build settings
 theme: minima

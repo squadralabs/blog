@@ -59,16 +59,21 @@ plugins:
 
 
 ## Collections
-# collections:
-#   authors:
-#     output: true
+collections:
+  authors:
+    output: true
+    permalink: /author/:name
 
 
 ## Front matter defaults
 defaults:
-  - 
-    scope:
-      path: "_posts"
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
+  - scope:
+      path: ""
       type: "posts"
     values:
       layout: "post"

@@ -1,6 +1,6 @@
 ---
 title: "StubHub International - Caso de éxito"
-image: "/assets/img/blog/concert_1.jpg"
+image: "/assets/img/blog/banner_concert_1.jpg"
 author: "Mariano Allevato"
 ---
 
@@ -11,7 +11,7 @@ author: "Mariano Allevato"
 En este artículo, te contamos qué procesos mejoramos y qué proyectos de innovación llevamos a cabo para que la empresa pueda seguir creciendo.
 
 ---
-<img src="{{ '/assets/img/blog/concert_1.jpg' | absolute_url }}" alt="Concierto" style="display: block; margin: 0 auto; max-width: 600px; width: 100%; height: auto;">
+<img src="{{ '/assets/img/blog/banner_concert_1.jpg' | absolute_url }}" alt="Concierto" style="display: block; margin: 0 auto; max-width: 600px; width: 100%; height: auto;">
 
 ## Artículo: Caso de éxito - Cómo colaboramos con StubHub International
 
@@ -24,7 +24,7 @@ Sin embargo, mantener esta infraestructura presenta grandes desafíos. Es en est
 A continuación, el detalle del trabajo de **Squadra Labs** junto con **StubHub International**.
 
 ---
-<img src="{{ '/assets/img/blog/stubhub_futbol.png' | absolute_url }}" alt="StubHub Sports" style="display: block; margin: 0 auto; max-width: 600px; width: 100%; height: auto;">
+<img src="{{ '/assets/img/blog/post_stubhub_futbol.png' | absolute_url }}" alt="StubHub Sports" style="display: block; margin: 0 auto; max-width: 600px; width: 100%; height: auto;">
 
 
 ## Squadra Labs: cuál fue nuestro trabajo
@@ -61,4 +61,4 @@ A lo largo de este proyecto, ayudamos a asegurar que su infraestructura de datos
 
 Nuestro trabajo conjunto continúa, y seguimos preparados para afrontar nuevos desafíos junto a **StubHub**, aportando soluciones que sigan optimizando sus procesos, integrando nuevas tecnologías, y asegurando que puedan seguir siendo líderes en el mercado de eventos a escala global.
 
-<img src="{{ '/assets/img/blog/coldplay.png' | absolute_url }}" alt="StubHub Concerts" style="display: block; margin: 0 auto; max-width: 600px; width: 100%; height: auto;">
+<img src="{{ '/assets/img/blog/post_coldplay.png' | absolute_url }}" alt="StubHub Concerts" style="display: block; margin: 0 auto; max-width: 600px; width: 100%; height: auto;">

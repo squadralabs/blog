@@ -1,6 +1,6 @@
 ---
 title: "Apache Iceberg - Gestión de datos en empresas modernas"
-image: "/assets/img/blog/apache_iceberg.jpg"
+image: "/assets/img/blog/banner_apache_iceberg.jpg"
 author: "Mariano Allevato"
 ---
 
@@ -26,7 +26,7 @@ En su núcleo, Iceberg está diseñado para proporcionar varios beneficios clave
 
 - **Rendimiento y Mantenimiento**: Uno de los mayores puntos débiles de los sistemas tradicionales es la ineficiencia en la actualización de pequeños conjuntos de datos y la dificultad para mantener el rendimiento a largo plazo. Iceberg resuelve esto al habilitar consultas rápidas a través de su enfoque basado en metadata. En lugar de escanear particiones o directorios completos de datos, Iceberg organiza los datos a través de snapshots y manifiestos para identificar solo los archivos necesarios para una consulta, mejorando significativamente el rendimiento.
 
-<img src="{{ '/assets/img/blog/apache_iceberg_diagram.jpg' | absolute_url }}" alt="Iceberg Diagram" style="display: block; margin: 0 auto; max-width: 600px; width: 100%; height: auto;">
+<img src="{{ '/assets/img/blog/post_apache_iceberg_diagram.jpg' | absolute_url }}" alt="Iceberg Diagram" style="display: block; margin: 0 auto; max-width: 600px; width: 100%; height: auto;">
 
 ## La evolución del Data Lakehouse
 

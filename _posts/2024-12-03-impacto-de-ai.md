@@ -1,6 +1,6 @@
 ---
 title: "Impacto de IA"
-image: "/assets/img/blog/mckinsey_ai.jpg"
+image: "/assets/img/blog/banner_mckinsey_ai.jpg"
 author: "Mariano Allevato"
 ---
 

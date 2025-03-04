@@ -1,12 +1,12 @@
 ---
 layout: default
+title: 
 ---
 
 <div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
-
+  <h1>Welcome to our Blog</h1>
+  <p>Here you will find some of our written resources about our Projects, Data, and IT. For more, check our <a href="https://www.linkedin.com/company/squadralabs" target="_blank"> LinkedIn</a></p>
+  
   {%- if site.posts.size > 0 -%}
     <div class="post-grid">
       {%- for post in site.posts -%}
@@ -25,9 +25,6 @@ layout: default
             </h2>
             <span class="post-card-date">{{ post.date | date: "%B %-d, %Y" }}</span>
           </header>
-          <div class="post-card-excerpt">
-            {{ post.excerpt | strip_html | truncatewords: 30 }}
-          </div>
         </div>
       </article>
       {%- endfor -%}

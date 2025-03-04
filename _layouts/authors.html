@@ -1,0 +1,62 @@
+---
+layout: default
+---
+<div class="authors-page">
+  <h1 class="page-title">Our Authors</h1>
+  
+  <div class="authors-grid">
+    {% for author in site.authors %}
+    <div class="author-card">
+      <div class="author-card-header">
+        {% if author.avatar %}
+        <div class="author-avatar">
+          <img src="{{ author.avatar | relative_url }}" alt="{{ author.name }}" />
+        </div>
+        {% endif %}
+        <div class="author-info">
+          <h2 class="author-name">{{ author.name }}</h2>
+          {% if author.position %}
+          <div class="author-position">{{ author.position }}</div>
+          {% endif %}
+          <div class="author-social">
+            {% if author.linkedin %}
+            <a href="{{ author.linkedin }}" class="social-icon" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            {% endif %}
+            {% if author.email %}
+            <a href="mailto:{{ author.email }}" class="social-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+              </svg>
+            </a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+
+      <div class="author-bio">
+        {{ author.content }}
+      </div>
+
+      {% assign author_posts = site.posts | where: "author", author.short_name %}
+      {% if author_posts.size > 0 %}
+      <div class="author-recent-posts">
+        <h3>Recent Posts</h3>
+        <ul>
+          {% for post in author_posts limit:3 %}
+          <li>
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            <span class="post-date">{{ post.date | date: "%B %-d, %Y" }}</span>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
+</div> 

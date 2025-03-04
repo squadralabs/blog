@@ -1,9 +1,8 @@
 ---
-layout: default
 title: "Apache Iceberg - Gestión de datos en empresas modernas"
 image: "/assets/img/blog/apache_iceberg.jpg"
+author: "Mariano Allevato"
 ---
-<img src="{{ '/assets/img/blog/apache_iceberg.jpg' | absolute_url }}" alt="Apache Iceberg" class="full-width-image">
 
 # Apache Iceberg - Gestión de datos en empresas modernas
 

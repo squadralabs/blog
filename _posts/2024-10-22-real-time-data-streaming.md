@@ -1,10 +1,8 @@
 ---
-layout: default
 title: "Arquitecturas de Datos Real-Time"
 image: "/assets/img/blog/banner_real_time.jpg"
+author: "Mariano Allevato"
 ---
-<img src="{{ '/assets/img/blog/banner_real_time.jpg' | absolute_url }}" alt="Real Time Data Processing" class="full-width-image">
-
 # Arquitecturas de Datos Real-Time
 
 ¿Real-time o procesamiento batch? Sabemos que la implementación de arquitecturas de **datos en tiempo real es una opción cada vez más accesible**.  

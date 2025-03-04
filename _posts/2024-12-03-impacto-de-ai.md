@@ -1,9 +1,8 @@
 ---
-layout: default
 title: "Impacto de IA"
 image: "/assets/img/blog/mckinsey_ai.jpg"
+author: "Mariano Allevato"
 ---
-<img src="{{ '/assets/img/blog/mckinsey_ai.jpg' | absolute_url }}" alt="AI McKinsey" class="full-width-image">
 
 # Impacto de IA según el informe de McKinsey & Company:
 

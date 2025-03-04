@@ -329,3 +329,147 @@ $on-laptop:        800px !default;
     height: 120px;
   }
 }
+
+/* ------------------ Authors Page ------------------ */
+.authors-page {
+  padding: 2rem 0;
+
+  .page-title {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--clr-gray-darkest);
+    text-align: center;
+  }
+}
+
+.authors-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+.author-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+  .author-card-header {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .author-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  
+  .author-info {
+    flex: 1;
+  }
+  
+  .author-name {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: var(--clr-gray-darkest);
+  }
+  
+  .author-position {
+    font-size: 1.1rem;
+    color: var(--clr-gray-dark);
+    margin-bottom: 1rem;
+  }
+  
+  .author-social {
+    display: flex;
+    gap: 0.75rem;
+  }
+  
+  .author-bio {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--clr-gray-darker);
+    margin-bottom: 1.5rem;
+  }
+  
+  .author-recent-posts {
+    border-top: 1px solid var(--clr-gray-lighter);
+    padding-top: 1.5rem;
+    
+    h3 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      color: var(--clr-gray-darkest);
+    }
+    
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    li {
+      margin-bottom: 0.75rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      
+      a {
+        color: var(--clr-purple);
+        text-decoration: none;
+        font-weight: var(--font-semibold);
+        
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      
+      .post-date {
+        font-size: 0.9rem;
+        color: var(--clr-gray-dark);
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .author-card {
+    padding: 1.5rem;
+    
+    .author-card-header {
+      flex-direction: column;
+      text-align: center;
+      gap: 1rem;
+    }
+    
+    .author-avatar {
+      margin: 0 auto;
+    }
+    
+    .author-social {
+      justify-content: center;
+    }
+    
+    .author-recent-posts li {
+      flex-direction: column;
+      gap: 0.25rem;
+      text-align: center;
+      
+      .post-date {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

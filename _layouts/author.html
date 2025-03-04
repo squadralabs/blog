@@ -1,0 +1,72 @@
+---
+layout: default
+---
+<div class="author-page">
+  <div class="author-header">
+    {% if page.avatar %}
+    <div class="author-avatar">
+      <img src="{{ page.avatar | relative_url }}" alt="{{ page.name }}" />
+    </div>
+    {% endif %}
+    <div class="author-info">
+      <h1 class="author-name">{{ page.name }}</h1>
+      {% if page.position %}
+      <div class="author-position">{{ page.position }}</div>
+      {% endif %}
+      <div class="author-social">
+        {% if page.linkedin %}
+        <a href="{{ page.linkedin }}" class="social-icon" target="_blank" rel="noopener noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+        {% endif %}
+        {% if page.email %}
+        <a href="mailto:{{ page.email }}" class="social-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+          </svg>
+        </a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+
+  <div class="author-bio">
+    {{ content }}
+  </div>
+
+  <div class="author-posts">
+    <h2>Posts by {{ page.name }}</h2>
+    <div class="post-grid">
+      {% assign posts = site.posts | where: "author", page.short_name %}
+      {% for post in posts %}
+        <article class="post-card">
+          {% if post.image %}
+          <div class="post-card-image">
+            <a href="{{ post.url | relative_url }}">
+              <img src="{{ post.image | relative_url }}" alt="{{ post.title | escape }}" loading="lazy">
+            </a>
+          </div>
+          {% endif %}
+          <div class="post-card-content">
+            <header class="post-card-header">
+              <h3 class="post-card-title">
+                <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+              </h3>
+              <div class="post-card-meta">
+                <span class="post-card-date">
+                  {{ post.date | date: "%B %-d, %Y" }}
+                </span>
+              </div>
+            </header>
+            <div class="post-card-excerpt">
+              {{ post.excerpt | strip_html | truncatewords: 30 }}
+            </div>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</div> 

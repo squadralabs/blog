@@ -36,10 +36,54 @@ body {
   line-height: 1.5;
 }
 
+/* ------------------ Utility Classes ------------------ */
+/*  Text  */
+.text-xxl {
+  font-size: clamp(2.5rem, 5vw, 3.25rem);
+  line-height: 1;
+  font-weight: var(--font-bold);
+}
+
+.text-xl {
+  font-size: clamp(1.8rem, 5vw + 1rem, 2.5rem);
+  line-height: 1.1;
+  font-weight: var(--font-bold);
+}
+
+.text-lg {
+  font-size: clamp(1.5rem, 5vw + 1rem, 1.8rem);
+}
+
+.text-md {
+  font-size: 1.1rem;
+}
+
+.text-sm {
+  font-size: 0.9rem;
+}
+
 .text-center {
   text-align: center;
 }
 
+.text-left {
+  text-align: left;
+}
+
+.text-upper {
+  text-transform: uppercase;
+}
+
+/* Shadows */
+.shadow {
+  --clr-shadow: var(--clr-gray-light);
+}
+
+.shadow-light {
+  --clr-shadow: var(--clr-gray-lighter);
+}
+
+/* ------------------ Posts ------------------ */
 .post-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -136,21 +180,21 @@ body {
   gap: 1rem;
 }
 
-.social-circle {
+.social-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 3rem;
   height: 3rem;
-  border-radius: 50%;
+  border-radius: 20%;
   padding: 0;
   line-height: 0;
   background-color: white;
   transition: all 0.3s ease;
 }
-.social-circle svg {
-  width: 1.5rem;
-  height: 1.5rem;
+.social-icon svg {
+  width: 2rem;
+  height: 2rem;
   color: var(--clr-purple-dark);
   margin: 0;
   padding: 0;
@@ -160,7 +204,7 @@ body {
   stroke-linecap: round;
   stroke-linejoin: round;
 }
-.social-circle:hover {
+.social-icon:hover {
   transform: scale(1.1);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
